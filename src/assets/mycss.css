@@ -1,0 +1,15 @@
+.v-note-panel {
+    position: relative;
+    border: 1px solid #f00;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}

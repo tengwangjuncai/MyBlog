@@ -23,40 +23,38 @@
             <span class="d_jump"></span>
             <div v-bind:class="[isLittleScreen ? 'containerS' : 'container']">
                 <div v-bind:class="[isLittleScreen ? 'container_top' : 'container_left']">
-                        <div class="introduce">
-                        <img class="introduce_icon" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816682771&di=f44eee8cfbbfa7405e1b37f93c15d4a8&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201211%2F11%2F20121111152729_vLh8t.thumb.700_0.jpeg"/>
-                        <h2>WPY</h2>
-                        <h3>iOS Developer</h3>
+                        <div v-if="resume.userInfor" class="introduce">
+                        <img  class="introduce_icon" :src="resume.userInfor.headImage"/>
+                        <h2>{{resume.userInfor.name}}</h2>
+                        <h3>{{resume.userInfor.identity}}</h3>
                         <div >
-                            <a class="introduce_url" href="http://localhost:8080/home/PageList" target="_blank">JunCai's Den</a>
+                            <a class="introduce_url" :href="resume.userInfor.denUrl" target="_blank">{{resume.userInfor.denName}}</a>
                         </div>
                         <div class="introduce_contactPages">
-                            <img class="introduce_page" :src="item" v-for="item in contacts"></img>
+                            <div v-for="(item,index) in contacts" @click="goContact(index)">
+                                <img class="introduce_page" :src="item"></img>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']">
-                    <div class="summary">
-                        <h1 class="summary_title">Summary</h1>
-                        <p class="summary_content">{{info.summary}}</p>
-                        <p class=""></p>
+                    <div v-if="resume.userInfor" class="summary">
+                        <h1 class="summary_title">{{info.summary}}</h1>
+                        <p class="summary_content">{{resume.userInfor.summary}}</p>
                         <div v-bind:class="[isShowList ? '' : 'summary_my']">
-                            <div class="summary_my_interests">
-                                <h3 class="summary_my_title">Interests</h3>
+                            <div v-if="resume.userInfor.interests" class="summary_my_interests">
+                                <h3 class="summary_my_title">{{info.interests}}</h3>
                                 <ul class="summary_introduce">
-                                    <li>Mobile Development</li>
-                                    <li>Object-C Programming</li>
-                                    <li>Swift Programming</li>
-                                    <li>Open Source Software</li>
+                                   <li v-for="item in resume.userInfor.interests">{{item}}</li>
                                 </ul>
 
                             </div>
-                            <div>
-                                <h3 class="summary_my_title">Education</h3>
+                            <div v-if="resume.userInfor.interests">
+                                <h3 class="summary_my_title">{{info.education}}</h3>
                                 <ul>
-                                    <li class="summary_introduce">
-                                        B.CS in Computer Science and Technology
-                                        <div class="summary_introduce_desc">Zhongyuan University of Technology</div>
+                                    <li class="summary_introduce" v-for="item in resume.userInfor.education">
+                                        <div>{{item.degree}}</div>
+                                        <div class="summary_introduce_desc">{{item.school}}</div>
                                     </li>
                                 </ul>
                             </div>
@@ -67,16 +65,17 @@
             <span class="d_jump"></span>
             <div v-bind:class="[isLittleScreen ? 'containerS' : 'container']" style="background-color: rgb(247, 247, 247)">
                 <div v-bind:class="[isLittleScreen ? 'container_top' : 'container_left']">
-                    <div class="container_Title">My Projects</div>
+                    <div class="container_Title">{{info.projects}}</div>
                 </div>
                 <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']">
                     <div class="projects_list">
-                        <div v-bind:class="[isShowList ? 'project_Item_S' : 'project_Item']" v-for="item in info.projects">
-                            <div class="">
-                                <img v-bind:class="[isShowList ? 'project_Item_icon_S' : 'project_Item_icon']" :src="item.icon"/>
-                            </div>
-                            <h4 class="project_Item_name">{{item.name}}</h4>
-                            <div class="project_Item_desc">{{item.desc}}</div>
+                        <div v-bind:class="[isShowList ? 'project_Item_S' : 'project_Item']" v-for="item in resume.projects" @click="goProjectDetail(item.projectUrl)">
+                                <div class="">
+                                    <img v-bind:class="[isShowList ? 'project_Item_icon_S' : 'project_Item_icon']" :src="item.iconUrl"/>
+                                </div>
+
+                            <h4  class="project_Item_name">{{item.projectName}}</h4>
+                            <div class="project_Item_desc">{{item.projectDesc}}</div>
                         </div>
                     </div>
                 </div>
@@ -84,16 +83,38 @@
             <span class="d_jump"></span>
             <div v-bind:class="[isLittleScreen ? 'containerS' : 'container']">
                 <div v-bind:class="[isLittleScreen ? 'container_top' : 'container_left']">
-                    <div class="container_Title">Professional Experience</div>
+                    <div class="container_Title">{{info.experience}}</div>
                 </div>
-                <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']"></div>
+                <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']">
+                    <div style="text-align: left;flex: 1;margin:20px;font-size: 17px" v-for="item in resume.experiences">
+                        <div class="proExperenceDate">{{item.startTime | dateformat('YYYY年MM月')}} ~ {{item.endTime | dateformat('YYYY年MM月')}}</div>
+                        <div style="display: flex">
+                            <a href="https://www.imguider.com/#page1"  style="color: darkcyan;margin-right: 20px;font-weight: 600;margin-bottom: 10px;text-decoration:none;">{{item.company}}</a>
+                            <div>{{item.workName}}</div>
+                        </div>
+                        <li>{{item.workContent}}</li>
+                    </div>
+                </div>
             </div>
             <span class="d_jump"></span>
             <div v-bind:class="[isLittleScreen ? 'containerS' : 'container']" style="background-color: rgb(247, 247, 247)">
                 <div v-bind:class="[isLittleScreen ? 'container_top' : 'container_left']">
-                    <div class="container_Title">Contact</div>
+                    <div class="container_Title">{{info.contact}}</div>
                 </div>
-                <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']"></div>
+                <div v-bind:class="[isLittleScreen ? 'container_bottom' : 'container_right']">
+                    <div style="display: flex;margin-top: 15px;margin-left: 20px">
+                        <img class="contactIcon" src="../assets/dianhua_green.png"/>
+                        <div class="conatactText">{{resume.userInfor.phone}}</div>
+                    </div>
+                    <div  style="display: flex;margin-top: 15px;margin-left: 20px">
+                        <img class="contactIcon" src="../assets/youxiangResume.png"/>
+                        <div class="conatactText">{{resume.userInfor.email}}</div>
+                    </div>
+                    <div v-if="resume.userInfor.address" style="display: flex;margin-top: 15px;margin-left: 20px">
+                        <img class="contactIcon" src="../assets/address_green.png"/>
+                        <div class="conatactText">{{resume.userInfor.address}}</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -101,28 +122,55 @@
 </template>
 
 <script>
+
+    import {httpGet,httpPost} from '@/utils/app'
     export default {
         name: "Resume",
         data() {
             return {
                 isLittleScreen:false,//小屏模式显示  width < 1500
                 isVerticalRow:false,//组间是否竖向排列 width < 900
-                infoCN:{resume:'简历',name:'王鹏宇',tag:['主页','项目','经历','联系','English']},
-                infoEN:{resume:'RESUME',name:'PENG YU WANG',tag:['Home','Projects','Experience','Contact','中文'],summary:'Peng Yu Wang is a professional developer who focuses on iOS now. He has strong knowledge of Swift, Objective-C . With these skills, he created quite a few widely used applications and frameworks.',
-                projects:[{name:'ImGuider',icon:require('../../src/assets/logo.png'),desc:'一款专注于出境游，自由行的语音神器。宝宝再也不用担心，旅游听话不懂，看不懂，找导游贵的尴尬了'},
-                    {name:'ImGuider',icon:require('../../src/assets/logo.png'),desc:'一款专注于出境游，自由行的语音神器。宝宝再也不用担心，旅游听话不懂，看不懂，找导游贵的尴尬了'},
-                    {name:'ImGuider',icon:require('../../src/assets/logo.png'),desc:'一款专注于出境游，自由行的语音神器。宝宝再也不用担心，旅游听话不懂，看不懂，找导游贵的尴尬了'}]},
+                infoCN:{resume:'简历',name:'王鹏宇',tag:['主页','项目','经历','联系','English'],summary:'概要',interests:'兴趣爱好',education:'教育经历',projects:'精选项目',experience:'职业经历',contact:'联系'},
+                infoEN:{resume:'RESUME',name:'PENG YU WANG',tag:['Home','Projects','Experience','Contact','中文'],summary:'Summary',interests:'Interests',education:'Education',projects:'My Projects',experience:'Professional Experience',contact:'Contact'},
                 info:{},
+                user:{},
                 language:'CN',
                 isShowList:false,
                 isShowMenu:false,
                 currentIndex:0,
                 jumps:[],
                 toTopSpace:70,
+                resume:{},
                 contacts:[require('../../src/assets/youxiangResume.png'),require('../../src/assets/twtterResume.png'),require('../../src/assets/weiboResume.png'),require('../../src/assets/githubResume.png')],
+
+                // projects:[{name:'Louvre',icon:require('../../src/assets/louvre.png'),url:'https://www.imguider.com/#page1',desc:'ImGuider导游讲解系列的一款专注于罗浮宫讲解的App，有很多罗浮宫官导的精彩解说。'},
+                //     {name:'ImGuider-X',icon:require('../../src/assets/imguiderX.png'),url:'https://www.imguider.com/#page1',desc:'一款高端的出游工具，行程内容随时看，精彩讲解随时听，便捷出游的同时记录您的一次次美好。'},
+                //     {name:'ImGuider',icon:require('../../src/assets/1024.png'),url:'https://www.imguider.com/#page1',desc:'一款致力于深度自由行的华语导游讲解App，很多深居欧洲多年的殿堂级导游亲自出马，讲解深度历史，奇闻趣事，带你玩懂世界。'},
+                //     {name:'WPYPlayer',icon:require('../../src/assets/wpyPlayer.jpg'),url:'https://github.com/tengwangjuncai/WPYPlayer',desc:'基于AVPlayer 自定义的一个高度灵活的音频播放器。是一个在音频播放方面比较全面成熟的播放器有object-C 和 Swift 两个版本'},
+                //     {name:'WPYCamera',icon:require('../../src/assets/wpyCamera.jpg'),url:'https://github.com/tengwangjuncai/WPYCamera',desc:'一个高度自定义的照相机和视频拍摄的app，类似于抖音拍摄剪辑功能。'},
+                //     {name:'WPYAnimation-swift',icon:require('../../src/assets/wpySwiftAnimation.png'),url:'https://github.com/tengwangjuncai/MyImGuider',desc:'一款专注于动画和特殊效果设计创作，收集，组合的App。把一功能需求赋予了自我的特殊设计思维'}]
             }
         },
         methods: {
+
+            goContact(index){
+                if(index == 0){
+
+
+                }else if(index == 1){
+
+                    let url = this.user.twitterUrl
+                    window.open(url,'_blank');
+                }else  if(index == 2){
+
+                    let url = this.user.weiboUrl
+                    window.open(url,'_blank');
+
+                }else  if(index == 3){
+                    let url = this.user.gitUrl
+                    window.open(url,'_blank');
+                }
+            },
 
             actionChange(index){
 
@@ -134,7 +182,10 @@
                 }
 
             },
+            goProjectDetail(url){
 
+                window.open(url,'_blank');
+            },
             changeLanguage(){
 
                 if (this.language == 'EN'){
@@ -237,6 +288,53 @@
                 }else if(scrolled < (this.jumps[1].offsetTop - this.toTopSpace)) {
                     this.currentIndex = 0;
                 }
+            },
+
+            setup(){
+
+                this.info = this.infoCN;
+                let _this = this;
+
+                this.$nextTick(function () {
+                    window.addEventListener('scroll',this.onScroll)
+                })
+
+                if(document.body.clientWidth < 1000){
+                    _this.isLittleScreen = true
+                    this.toTopSpace = 50;
+
+                    if(document.body.clientWidth < 650){
+                        _this.isShowList = true
+                    }
+                }
+                let jump = document.querySelectorAll('.d_jump');
+                this.jumps = jump;
+
+                window.onresize = function () {
+
+                    let width = document.body.clientWidth;
+                    let height = document.body.scrollHeight;
+
+                    console.log('------' + width + '------' + height);
+
+                    if(width < 1000){
+                        _this.isLittleScreen = true
+                        console.log('改了呀' + _this.isLittleScreen);
+                        this.toTopSpace = 50;
+                        if(document.body.clientWidth < 650){
+                            _this.isShowList = true
+                        }else {
+                            _this.isShowList = false
+                        }
+                    }else {
+                        _this.isLittleScreen = false
+                        this.toTopSpace = 70;
+                    }
+
+                    let jump = document.querySelectorAll('.d_jump');
+                    this.jumps = jump;
+
+                }
             }
 
 
@@ -244,49 +342,23 @@
 
         mounted(){
 
-            this.info = this.infoEN;
             let _this = this;
+           this.setup()
+            console.error('进来了')
+            // httpGet('/resume',{}).then(response => {
+            //
+            //     _this.resume = response.data;
+            //     console.error(JSON.stringify(_this.resume))
+            // });
 
-            this.$nextTick(function () {
-                window.addEventListener('scroll',this.onScroll)
-            })
+            httpPost('/user/userInfo',{id:this.$route.query.userid}).then(response => {
 
-            if(document.body.clientWidth < 1000){
-                _this.isLittleScreen = true
-                this.toTopSpace = 50;
+                console.log("========" + response.data)
 
-                if(document.body.clientWidth < 650){
-                    _this.isShowList = true
-                }
-            }
-            let jump = document.querySelectorAll('.d_jump');
-            this.jumps = jump;
+                _this.user = response.data;
 
-            window.onresize = function () {
-
-                let width = document.body.clientWidth;
-                let height = document.body.scrollHeight;
-
-                console.log('------' + width + '------' + height);
-
-                if(width < 1000){
-                    _this.isLittleScreen = true
-                    console.log('改了呀' + _this.isLittleScreen);
-                    this.toTopSpace = 50;
-                    if(document.body.clientWidth < 650){
-                        _this.isShowList = true
-                    }else {
-                        _this.isShowList = false
-                    }
-                }else {
-                    _this.isLittleScreen = false
-                    this.toTopSpace = 70;
-                }
-
-                let jump = document.querySelectorAll('.d_jump');
-                this.jumps = jump;
-
-            }
+                _this.resume = JSON.parse(_this.user.resume);
+            });
         }
     }
 </script>
@@ -308,7 +380,7 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,.11);
     }
     .navL{
         /*height: 70px;*/
@@ -319,7 +391,7 @@
         right: 0px;
         z-index: 1000;
         background: #fff;
-        box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11);
+        box-shadow: 0 3px 3px 0 rgba(0,0,0,.11);
     }
     .nav_container{
         padding-right: 15px;
@@ -385,6 +457,7 @@
         border: 1px solid lightgrey;
         margin: 10px;
         border-radius: 5px;
+        cursor: pointer;
     }
     .hide{
         display: none;
@@ -407,6 +480,7 @@
         font-weight: 600;
         font-size: 18px;
         white-space: nowrap;
+        cursor: pointer;
     }
 
     .nav_TagSelect{
@@ -414,6 +488,7 @@
         font-weight: 700;
         font-size: 18px;
         white-space: nowrap;
+        cursor: pointer;
     }
 
     .content{
@@ -498,6 +573,7 @@
         margin: 0 8px;
         object-fit: cover;
         object-position: center;
+        cursor: pointer;
 
         /*background-image: url('../../src/assets/youxiang.png'), linear-gradient(#f00, #f00);*/
         /*background-blend-mode: lighten;*/
@@ -552,7 +628,7 @@
     .summary_content{
 
         display: block;
-        margin-bottom: 1rem;
+        margin-bottom:40px;
         text-align: left;
 
         font-size: 1.4em;
@@ -613,6 +689,8 @@
         background-color:white;
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
         border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
 
     }
 
@@ -626,6 +704,8 @@
         box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
         min-width: 250px;
         border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
     }
 
     .project_Item_icon{
@@ -641,7 +721,7 @@
     }
     .project_Item_name{
         text-align: left;
-        padding: 5px 15px;
+        padding: 15px 15px 10px;
         margin: 0px;
         color: #313131;
         text-rendering: optimizeLegibility;
@@ -652,7 +732,7 @@
         padding: 0 15px;
         margin-bottom: 15px;
         color: #999999;
-        font-size: 0.75rem;
+        font-size: 12px;
     }
 
     .nav_selectView{
@@ -671,7 +751,18 @@
     }
 
 
-
+    .contactIcon{
+        height: 30px;
+        width: 30px;
+        margin: 5px 15px 5px 0px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .conatactText{
+        line-height: 40px;
+        font-size: 17px;
+        font-weight: 500;
+    }
 
 
 

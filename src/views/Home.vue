@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" v-loading="isLoading">
     <div v-bind:class="[isLittleScreen ? 'TopButton' : 'home_more']">
       <div class="TopButton_action" @click="showMenu">
         <img class="TopButton_icon" :src="BtnIcon" />
@@ -18,71 +18,92 @@
     </div>
     <div v-bind:class="[{homeLeft_row:leftRow && !isLittleScreen},
     {homeLeft:!leftRow},{homeTop:(isLittleScreen && leftRow)}]">
-      <!--<img class="homeLeft_bg" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg"/>-->
+      <img v-bind:class="[{homeLeft_mask_row:leftRow && !isLittleScreen},{homeLeft_mask:!leftRow},{homeTop_mask:(isLittleScreen && leftRow)}]" :src="user.BgUrl ? user.BgUrl : defultBgImag"/>
       <div v-bind:class="[{homeLeft_mask_row:leftRow && !isLittleScreen},{homeLeft_mask:!leftRow},{homeTop_mask:(isLittleScreen && leftRow)}]"></div>
       <div v-bind:class="[(isLittleScreen && leftRow) ? 'homeTop_content' : 'homeLeft_content']">
-        <img class="homeLeft_icon" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816682771&di=f44eee8cfbbfa7405e1b37f93c15d4a8&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201211%2F11%2F20121111152729_vLh8t.thumb.700_0.jpeg"/>
-        <div class="homeLeft_name">Juncai's Den</div>
-        <div class="homeLeft_sign">浮世万千，吾爱有三</div>
+        <img class="homeLeft_icon" :src="user.headimage ? user.headimage : defultHeadIcon"/>
+        <div class="homeLeft_name">{{user.name}}'s Den</div>
+        <div class="homeLeft_sign">{{user.mark ? user.mark : defultMark}}</div>
         <div v-bind:class="[(isLittleScreen && leftRow) ? 'home_more' : '']">
           <div class="homeLeft_line"></div>
-          <div class="homeLeft_introduce" v-html="desc">{{desc}}</div>
+          <div class="homeLeft_introduce" v-html="user.personInfo ? user.personInfo : defultInfo"></div>
           <div v-bind:class="[isLittleScreen ? 'home_List' : '']">
             <div class="homeLeft_pageList">
               <div class="homeLeft_pageItem" @click="goDetail(index)" v-for="(item,index) in list">{{item}}</div>
             </div>
             <div class="homeLeft_contactPages">
-              <img class="homeLeft_page" :src="item" v-for="item in contacts"></img>
+              <img class="homeLeft_page" :src="item" v-for="(item,index) in contacts" @click="goContact(index)"></img>
             </div>
+            <div style="color: darkcyan;margin-top: 50px;font-size: 14px;cursor: pointer" @click="goSignUp">开启你的 Den >></div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <div v-bind:class="[(isLittleScreen && leftRow) ? 'homeBottom' : 'homeRight']">
+    <div v-if="leftRow" v-bind:class="[(isLittleScreen && leftRow) ? 'homeBottom' : 'homeRight']">
       <div class="">
+        <keep-alive>
           <router-view></router-view>
-        <!--<div class="" v-for="item in pageList">-->
-          <!--<h2 class="homeRight_title">{{item.title}}</h2>-->
-          <!--<p class="homeRight_desc">{{item.desc}}</p>-->
-          <!--<div class="homeRight_container">-->
-            <!--<div class="homeRight_date">{{item.date}}</div>-->
-            <!--<div class="homeRight_action" @click="goPageDetail(item)"> 继续阅读</div>-->
-          <!--</div>-->
-        <!--</div>-->
+        </keep-alive>
       </div>
     </div>
-
-
-
   </div>
 </template>
 
 <script>
+    import {httpGet,httpPost} from '@/utils/app';
     export default {
         name: "HomeView",
         data() {
             return {
+
+                mTabPosition: 0,
+                isLogin:false,
+                isShowLogin:true,
                 leftRow:false,//是否左右分屏显示   根据屏幕宽度看是否分屏
                 isLittleScreen:false,//小屏模式显示 与 leftRow  相对
                 isMenuShow:false,
                 desc: '嗨，我是xxx  (@twjuncai)  一名ios开发者 \n 正在探索创意之源',
-                list:['博客','简历','工具'],
-
+                list:['博客','项目','简历'],
                 contacts:[require('../../src/assets/footer_weibo.png'),require('../../src/assets/github.png'),require('../../src/assets/Group.png'),require('../../src/assets/youxiang.png')],
-                pageList:[{title:'关于 Swift defer 的正确使用',desc:'其实这篇文章的缘起是由于在对 Kingfisher 做重构的时候，因为自己对 defer 的理解不够准确，导致了一个 bug。所以想藉由这篇文章探索一下 defer 这个关键字的一些 edge case。典型用法Swift 里的 defer 大家应该都很熟悉了，defer 所声明的 block 会在当前代码执行退出后被调用。正因为它提供了一种延时调用的方式，所以一般会被用来做资源释放或者销毁，这在某个函数有多个返回出口的时候特别有用。比如下面的通过 FileHandle 打开文件进行操作的...…',date:'2018-12-02'}, {title:'十年前的日记们',desc:'假如我有时光机最近把工作上的事情忙完了，也把主机从美国换到了日本的机房，解决了国内的访问问题，所以准备开始好好重新拾掇一下，恢复定期更新 blog。其实我从大学时就有开始写 blog 的习惯了。不过不像最近的独立博客，那时候更多地是用新浪或者搜狐这样的平台，所以也就在那些地方也留下了不少“足迹”。既然是自己“存在过的证明”，我想可能还是把它们汇总一下，留个存档为好。于是就有了这篇和“技术”没什么关系的文章。这里面是我从 2006 年底到 2010 年三月期间的一些碎碎念，时间跨越从大二上半...…',date:'2018-12-02'},
-                    {title:'开发者所需要知道的 WWDC 2018 新特性',desc:'一直阅读我的博客的朋友可能知道，我在每年 WWDC 之后都会写 (水) 一篇关于新 SDK 和开发工具的文章。之前这个系列叫做《开发者所需要知道的 iOS SDK 新特性》，但是最近虽然 Craig 嘴上说着不要，身体却很诚实地将 iOS 和 macOS 带到一起，所以今年我觉得可以改一改题目，就总览一下作为 Apple 生态圈的开发者，在今年 WWDC 上我个人的一些观察，以及可能应该注意的有趣的地方。在会前，Apple 就已经放出消息要放慢增加新功能的脚步，转而提升软件稳定性和可靠性。...…',date:'2018-12-02'}],
-
                 PageListPath:'PageList',
                 width:document.body.clientWidth,
 
                 normalIcon:require('../../src/assets/menu.png'),
                 selectIcon:require('../../src/assets/up.png'),
-                BtnIcon:'',
+
+                defultHeadIcon:require('../assets/defultHeadIcon.jpg'),
+                defultBgImag:require('../assets/horse.jpg'),
+                defultMark:'例：不忘初心，方得始终',
+                defultInfo:'快来简单的介绍一下自己吧（-_-）',
+
+                BtnIcon:require('../../src/assets/menu.png'),
+
+                user:{
+                    name:'',
+                    password:'',
+                },
+
+                userid:'',
+                isLoading:false,
             }
         },
         methods:{
+
+            goSignUp(){
+
+                let route = this.$router.resolve({
+                    path:'/Login',
+                });
+
+                window.open(route.href,'_blank');
+            },
             goDetail(index){
+
+                let userid = this.userid
+
+                this.mTabPosition = index
                 if (index == 0){
                     if(!this.leftRow){
                         this.leftRow = true;
@@ -92,17 +113,46 @@
                     if (this.isLittleScreen){
                         this.showMenu();
                     }
+
+                    this.$router.replace({
+                        path: '/home/PageList',
+                        query:{userid:userid},
+                    })
                 } else if (index == 1){
 
+                    if(!this.leftRow){
+                        this.leftRow = true;
+                        sessionStorage.setItem('leftrow',this.leftRow);
+                    }
+
+                    if (this.isLittleScreen){
+                        this.showMenu();
+                    }
+
+                    this.$router.replace({
+                        path: '/home/Project',
+                        query:{userid:userid},
+                    })
+
+                }else  if (index == 2){
+
                     let route = this.$router.resolve({
-                        // name:'Resume',
                         path:'/Resume',
-                        query:{},
+                        query:{userid:userid},
                     });
 
                     window.open(route.href,'_blank');
+            }else if(index == 3){
 
-                }else  if (index == 2){
+                    let route = this.$router.resolve({
+                        path:'/EditView',
+                        query:{},
+                    });
+                    window.open(route.href,'_blank');
+                    // this.$router.push({
+                    //     path: '/EditView',
+                    // })
+
 
                 }
             },
@@ -115,11 +165,71 @@
                     this.BtnIcon = this.normalIcon;
                     this.isMenuShow = false;
                 }
-            }
+            },
+
+            goContact(index){
+                if(index == 0){
+
+                    let url = this.user.weiboUrl
+                    window.open(url,'_blank');
+
+                }else if(index == 1){
+                    let url = this.user.gitUrl
+                    window.open(url,'_blank');
+
+                }else  if(index == 2){
+                    let url = this.user.twitterUrl
+                    window.open(url,'_blank');
+
+                }else  if(index == 3){
+
+                }
+            },
+
+            loadData(){
+
+
+                let _this = this
+
+                _this.isLoading = true
+
+                let param = {id:_this.userid}
+
+                httpPost('/user/userInfo',param).then(response => {
+
+                    _this.isLoading = false
+
+                    _this.user = response.data;
+
+                    document.title = _this.user.name + '\'s Den'
+                });
+            },
+
         },
 
 
         mounted(){
+
+            this.userid = this.$route.query.userid
+
+            let path = window.location.href
+            console.log(path)
+            if (!this.userid){
+               if (path.endsWith('Juncai')){
+
+                   this.userid = '1aff5690-4709-11e9-a4c6-cb0e7c6146e0'
+               } else if(path.endsWith('xiaoqiang')){
+
+                   this.userid = '616df2e0-ddb7-11e9-a795-7576b15274fc'
+               }
+
+            }
+            console.error('======' + this.userid)
+
+            let name = this.$route.query.name
+            if (name){
+                document.title = name + '\'s Den'
+            }
 
             this.desc = this.desc.replace(/\n|\r\n/g, "<br/>");
             this.leftRow = sessionStorage.getItem('leftrow');
@@ -146,6 +256,8 @@
                 }
 
             }
+
+            this.loadData()
 
         }
     }
@@ -190,7 +302,7 @@
     top: 36px;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 2147483647;
     /*height: 100px;*/
     /*background: darkgreen;*/
     background:rgba(38,38,38,0.97);/*#262626*/
@@ -235,10 +347,11 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background-position: center center;
-    z-index: 900;
-    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;
-    background-size: cover;
+
+    /*z-index: 900;*/
+    /*background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;*/
+    /*background-size: cover;*/
+    /*background-position: center center;*/
   }
 
   .homeLeft_row{
@@ -246,9 +359,9 @@
     position: fixed;
     height: 100%;
     width: 30%;
-    background-position: center center;
-    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;
-    background-size: cover;
+    /*background-position: center center;*/
+    /*background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;*/
+    /*background-size: cover;*/
   }
 
    .homeLeft_mask{
@@ -257,7 +370,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+     background: rgba(47, 32, 77, 0.8);
+     object-fit: cover;
+     object-position: center center;
   }
   .homeLeft_mask_row{
     position: absolute;
@@ -266,7 +381,9 @@
     width: 100%;
     height: 100%;
     /*height:  100%;*/
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(47, 32, 77, 0.8);
+    object-fit: cover;
+    object-position: center center;
   }
   .homeLeft_icon{
     width: 70px;
@@ -323,17 +440,36 @@
 
   .homeLeft_introduce{
 
-    padding: 5px 10px;
+    padding: 5px 30px;
     color:lightgray;
     line-height: 40px;
 
     /*display: none;*/
   }
 
+  .homeLeft_login{
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+    font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    color: #CCCCCC;
+    font-size: 14px;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .homeLeft_login_Btn{
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    /*background: red;*/
+  }
+
   .homeLeft_pageList{
     display: flex;
     flex-direction:row;
-    margin:0 auto;
+    flex-wrap: wrap;
+    margin:3% auto;
     margin-top: 30px;
     /*width: 320px;*/
     justify-content: center;
@@ -353,7 +489,8 @@
     line-height: 30px;
     text-align: center;
     border: 1px solid #CCCCCC;
-    margin: 0 8px;
+    margin: 5px 8px;
+    cursor:pointer;
   }
 
   .homeLeft_contactPages{
@@ -374,6 +511,7 @@
     margin: 0 8px;
     object-fit: cover;
     object-position: center;
+    cursor:pointer;
   }
 
 
@@ -433,9 +571,9 @@
     background-position: center center;
     width: 100%;
 
-    background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;
-    background-size: cover;
-    vertical-align: baseline;
+    /*background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543816741060&di=d9bfdad227b4c345741f4a42a56b6131&imgtype=0&src=http%3A%2F%2Fpic117.nipic.com%2Ffile%2F20161208%2F24443431_165032871926_2.jpg") center no-repeat #666666;*/
+    /*background-size: cover;*/
+    /*vertical-align: baseline;*/
 
   }
 
@@ -458,7 +596,9 @@
       left: 0;
       width: 100%;
       height: 300px;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(47, 32, 77, 0.8);
+      object-fit: cover;
+      object-position: center center;
     }
 
   .homeBottom{
@@ -467,6 +607,7 @@
     width: 100%;
 
   }
+
 
 
 </style>
