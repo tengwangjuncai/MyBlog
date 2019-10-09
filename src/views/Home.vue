@@ -13,7 +13,9 @@
         <div class="TopMenu_cell" @click="goDetail(index)">{{item}}</div>
       </div>
       <div class="TopMenu_contact">
-        <img class="homeLeft_page" :src="item" v-for="item in contacts"/>
+        <div v-for="(item,index) in contacts" @click="goContact(index)">
+          <img class="homeLeft_page" :src="item"/>
+        </div>
       </div>
     </div>
     <div v-bind:class="[{homeLeft_row:leftRow && !isLittleScreen},

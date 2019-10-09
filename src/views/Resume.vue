@@ -4,7 +4,7 @@
             <div v-bind:class="[isLittleScreen ? 'navMenu_container' : 'navL_container']">
                 <div v-bind:class="[isLittleScreen ? 'nav_title' : 'navL_title']">
                     <div class="nav_titleView">
-                        <div>{{info.resume}} - {{info.name}}</div>
+                        <div>{{info.resume}} - {{resume.userInfor.name}}</div>
                         <div v-bind:class="[isLittleScreen ? 'nav_Btn' : 'hide']" @click="showMenu">
                             <img class="nav_Btn_img" src="../../src/assets/caidan-2.png"/>
                         </div>
