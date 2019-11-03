@@ -38,7 +38,18 @@
                 this.isSmallScreen = true
             }
 
-            this.page = JSON.parse(localStorage.getItem('myPage'));
+            // this.page = JSON.parse(sessionStorage.getItem('myPage'));
+            //
+            // let md =  mavonEditor.getMarkdownIt()
+            //
+            // this.content = md.render(this.page.pageContent)
+            //
+            // console.log(this.content)
+        },
+
+        activated() {
+
+            this.page = JSON.parse(sessionStorage.getItem('myPage'));
 
             let md =  mavonEditor.getMarkdownIt()
 
@@ -46,6 +57,7 @@
 
             console.log(this.content)
         }
+
     }
 </script>
 

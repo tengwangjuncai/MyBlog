@@ -46,7 +46,7 @@
             goPageDetail(item){
 
                 // this.$router.push({path: '/home/PageDetail'})
-                localStorage.setItem('myPage',JSON.stringify(item))
+                sessionStorage.setItem('myPage',JSON.stringify(item))
 
                 this.$router.push({
                     path: '/PageDetail',

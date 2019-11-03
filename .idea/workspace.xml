@@ -3,106 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4a3b159f-989f-4801-9349-ad3fd2c75f6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/HISTORY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/pattern.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/required.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/rule/whitespace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/boolean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/float.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/integer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/method.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/number.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/pattern.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/regexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/required.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/es/validator/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/pattern.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/range.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/required.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/rule/whitespace.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/array.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/boolean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/date.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/float.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/integer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/method.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/number.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/object.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/pattern.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/regexp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/required.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/string.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/lib/validator/type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async-validator/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-helper-vue-jsx-merge-props/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/babel-helper-vue-jsx-merge-props/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/src/ExecutionEnvironment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/src/UserAgent_DEPRECATED.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/src/isEventSupported.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/normalize-wheel/src/normalizeWheel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/dist/ResizeObserver.es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/dist/ResizeObserver.global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/dist/ResizeObserver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/dist/ResizeObserver.js.flow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/ResizeObservation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/ResizeObserver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/ResizeObserverController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/ResizeObserverEntry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/ResizeObserverSPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/index.js.flow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/shims/es6-collections.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/shims/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/shims/requestAnimationFrame.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/utils/defineConfigurable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/utils/geometry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/utils/getWindowOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/utils/isBrowser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/resize-observer-polyfill/src/utils/throttle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/debounce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/throttle-debounce/throttle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/PageDetail.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PageDetail.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/PageList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/PageList.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -115,11 +17,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="384">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Resume.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/PageDetail.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/PageList.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/icon-upload.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
+            <state relative-caret-position="360">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
@@ -161,11 +102,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/views/PageList.vue" />
+        <option value="$PROJECT_DIR$/src/router.js" />
+        <option value="$PROJECT_DIR$/src/views/PageDetail.vue" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
+    <option name="x" value="421" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
     <option name="height" value="923" />
@@ -182,21 +126,33 @@
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569596584697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570771858425" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.splitter.proportion" value="0.27173913" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,8 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.serve" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.serve" />
       </list>
     </recent_temporary>
   </component>
@@ -251,12 +207,13 @@
       <workItem from="1569579133682" duration="1643000" />
       <workItem from="1570586985549" duration="1057000" />
       <workItem from="1570588154361" duration="1094000" />
-      <workItem from="1570590958729" duration="174000" />
+      <workItem from="1570590958729" duration="3211000" />
+      <workItem from="1571118968787" duration="967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3968000" />
+    <option name="totallyTimeSpent" value="7972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -269,12 +226,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="23" width="1400" height="923" extended-state="0" />
+    <frame x="421" y="23" width="1400" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5292887" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72322506" visible="true" weight="0.2533137" />
       <window_info id="Structure" order="1" sideWeight="0.47037703" side_tool="true" weight="0.2533137" />
-      <window_info id="npm" order="2" sideWeight="0.4707113" side_tool="true" visible="true" weight="0.2533137" />
+      <window_info id="npm" order="2" sideWeight="0.27677497" side_tool="true" visible="true" weight="0.2533137" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -282,7 +239,7 @@
       <window_info id="Favorites" order="7" sideWeight="0.47037703" side_tool="true" weight="0.2533137" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6738869" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36702767" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,8 +247,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32972324" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4247894" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4247894" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32972324" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -306,12 +264,61 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/views/PageList.vue</url>
+          <line>56</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Resume.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/PageList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/app.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Bg-upload.vue">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/icon-upload.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/HelloWorld.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -320,17 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/icon-upload.vue">
+    <entry file="file://$PROJECT_DIR$/src/views/PageDetail.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="256">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
