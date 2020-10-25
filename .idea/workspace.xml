@@ -2,48 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a3b159f-989f-4801-9349-ad3fd2c75f6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_13.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_15.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_8.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Ying/ying_9.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/photo/photo_9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_10.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_11.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_12.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_13.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_14.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_15.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_5.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_7.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_9.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/weiwei/wei_icon.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/word/wpy_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/word/wpy_13.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/word/wpy_16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/word/wpy_17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/CoverPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/CoverPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/HomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_1.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_2.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_2.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_3.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_3.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_4.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_4.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_5.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_5.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_6.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/BirthdayWishes/Page_6.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,95 +23,38 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_1.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/app.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_2.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/axios-utils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_3.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/babel.config.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_8.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="115" column="46" selection-start-line="115" selection-start-column="36" selection-end-line="115" selection-end-column="46" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_9.jpeg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_13.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/router.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/BirthdayWishes/Page_6.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="34" column="143" selection-start-line="34" selection-start-column="143" selection-end-line="34" selection-end-column="143" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/BirthdayWishes/Page_3.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="57" column="150" selection-start-line="57" selection-start-column="150" selection-end-line="57" selection-end-column="150" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/BirthdayWishes/CoverPage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_15.jpeg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -180,10 +89,13 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="90" />
+    <option name="x" value="283" />
     <option name="y" value="23" />
     <option name="width" value="1550" />
     <option name="height" value="923" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -201,6 +113,12 @@
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MyBlog" type="b2602c69:ProjectViewProjectNode" />
@@ -231,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603612317048" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1603612789144" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
@@ -239,9 +157,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/Ying" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/assets/word" />
-      <recent name="$PROJECT_DIR$/src/assets/Ying" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -300,12 +218,20 @@
       <workItem from="1570590958729" duration="3211000" />
       <workItem from="1571118968787" duration="967000" />
       <workItem from="1603551521794" duration="1498000" />
-      <workItem from="1603553984630" duration="20245000" />
+      <workItem from="1603553984630" duration="20745000" />
     </task>
+    <task id="LOCAL-00001" summary="改变">
+      <created>1603612356891</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603612356891</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29715000" />
+    <option name="totallyTimeSpent" value="30215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -318,11 +244,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="23" width="1550" height="923" extended-state="0" />
+    <frame x="606" y="32" width="1550" height="923" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7263514" visible="true" weight="0.29973474" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7253142" visible="true" weight="0.29973474" />
       <window_info id="Structure" order="1" sideWeight="0.47037703" side_tool="true" weight="0.2533137" />
-      <window_info id="npm" order="2" sideWeight="0.27364865" side_tool="true" visible="true" weight="0.29973474" />
+      <window_info id="npm" order="2" sideWeight="0.27468583" side_tool="true" visible="true" weight="0.29973474" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -331,13 +257,13 @@
       <window_info anchor="bottom" id="Thumbnails" weight="0.32972324" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2876053" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2876053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972324" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32972324" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32972324" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.4247894" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -355,6 +281,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="改变" />
+    <option name="LAST_COMMIT_MESSAGE" value="改变" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -428,36 +358,6 @@
     <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_20.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_3.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_8.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_9.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_13.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_15.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_17.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_18.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_22.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_1.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_2.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/BirthdayWishes/Page_5.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -517,7 +417,7 @@
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-171">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -530,7 +430,7 @@
     <entry file="file://$PROJECT_DIR$/src/utils/axios-utils.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -551,7 +451,7 @@
     <entry file="file://$PROJECT_DIR$/src/views/BirthdayWishes/CoverPage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -585,6 +485,36 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_17.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_18.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_22.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_1.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_3.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_8.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_9.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_13.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Ying/ying_15.jpeg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
