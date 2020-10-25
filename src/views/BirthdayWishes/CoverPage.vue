@@ -7,7 +7,7 @@
             <!--<img class="headerIcon" src="@/assets/weiwei/wei_icon.jpeg"/>-->
             <div class="jiantou" @click="goBirthday">
                 <img  class="headerIcon" v-bind:class="{a_jiantou: isCurrentPage}"
-                      src='@/assets/weiwei/wei_icon.jpeg'>
+                      src='@/assets/Ying/ying_icon.jpeg'>
             </div>
         </div>
     </div>
@@ -28,14 +28,14 @@
 
                 console.log('==========')
                 this.$router.push({
-                    path: '/HomePage',
+                    path: '/YingHomePage',
                     // query:{userid:userid},
                 });
             }
         },
 
         mounted(){
-            document.title = '维维生日定制'
+            document.title = '影儿生日定制'
         }
     }
 </script>
@@ -74,7 +74,7 @@
             width: 65px;
             height: 65px;
             border-radius: 50%;
-            border: 3px solid lightcoral;
+            border: 3px solid lightblue;
         }
 
         .btn{

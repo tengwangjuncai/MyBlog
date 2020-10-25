@@ -47,13 +47,13 @@ export default new Router({
             component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
         },
         {
-            path: '/HomePage',
+            path: '/YingHomePage',
             name: 'HomePage',
             component: () => import('./views/BirthdayWishes/HomePage.vue'),
         },
         {
-            path: '/CoverPage',
-            name: 'CoverPage',
+            path: '/Ying',
+            name: 'Ying',
             component: () => import('./views/BirthdayWishes/CoverPage.vue'),
         },
         {

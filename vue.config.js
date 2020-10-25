@@ -112,7 +112,7 @@ module.exports = {
         // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/cli-service.md#配置代理
         proxy:{
             '/wpyblogapi/api': {
-                target: 'http://www.small-strong.wang/wpyblogapi/api',  // target host
+                target: 'http://api.small-strong.wang/wpyblogapi/api',  // target host
                 ws: true,  // proxy websockets
                 changeOrigin: true,  // needed for virtual hosted sites
                 pathRewrite: {

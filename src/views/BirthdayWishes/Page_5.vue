@@ -23,9 +23,9 @@
              src='@/assets/flower/flower_6.png'>
 
         <img class='photo_13' v-bind:class="{a_photo_13: isCurrentPage}"
-             src='@/assets/weiwei/wei_3.jpeg'>
+             src='@/assets/Ying/ying_15.jpeg'>
         <img class='photo_12' v-bind:class="{a_photo_12: isCurrentPage}"
-             src='@/assets/weiwei/wei_2.jpeg'>
+             src='@/assets/Ying/ying_13.jpeg'>
 
         <img class='word_12' v-bind:class="{a_word_12: isCurrentPage}"
              src='@/assets/word/wpy_5.png'>

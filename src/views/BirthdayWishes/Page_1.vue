@@ -34,7 +34,7 @@
              src='@/assets/photo_bg/photo_bg_15.png'>
 
         <img class='photo_10' v-bind:class="{a_photo_10: isCurrentPage}"
-             src='@/assets/weiwei/wei_1.jpeg'>
+             src='@/assets/Ying/ying_1.jpeg'>
 
         <img  class='jiantou' v-bind:class="{a_jiantou: isCurrentPage}"
              src='@/assets/word/jiantou.png'>

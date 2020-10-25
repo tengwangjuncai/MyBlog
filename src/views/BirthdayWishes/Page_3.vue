@@ -37,11 +37,11 @@
 
 
         <img class='photo_4' v-bind:class="{a_photo_4: isCurrentPage}"
-             src='@/assets/weiwei/wei_5.jpeg'>
+             src='@/assets/Ying/ying_22.jpeg'>
         <img class='photo_5' v-bind:class="{a_photo_5: isCurrentPage}"
-             src='@/assets/weiwei/wei_11.jpeg'>
+             src='@/assets/Ying/ying_17.jpeg'>
         <img class='photo_11' v-bind:class="{a_photo_11: isCurrentPage}"
-             src='@/assets/weiwei/wei_4.jpeg'>
+             src='@/assets/Ying/ying_18.jpeg'>
 
         <img class='photo_bg_9' v-bind:class="{a_photo_bg_9: isCurrentPage}"
              src='@/assets/photo_bg/photo_bg_9.png'>
@@ -55,7 +55,7 @@
                 <img  class="bg" src='@/assets/present.png'/>
                 <img  v-if="!isShowLabel" class="circle" src='@/assets/kai.png' @click="open"/>
                 <div v-if="isShowLabel" style="font-size: 20px;text-align: center;margin-bottom: 30px;z-index: 100;color: #CB8C45;font-weight: 600">空白愿望单</div>
-                <div v-if="isShowLabel" style="font-size: 14px;text-align: center;z-index: 100;color:#CB8C45;font-weight: 500">我力所能及的合理愿望都可以，比如 把你从你家领走(-_-)</div>
+                <div v-if="isShowLabel" style="font-size: 14px;text-align: center;z-index: 100;color:#CB8C45;font-weight: 500">我力所能及的合理愿望都可以，比如 把你从咱妈身边带走(-_-)</div>
                 <div v-if="isShowLabel" class="btn" @click="selectThePresent">{{btnTitle}}</div>
             </div>
         </div>
@@ -164,8 +164,8 @@
             object-fit: contain;
             height: 3.7rem;
             width: 4.93rem;
-            left: 0.5rem;
-            top: 4rem;
+            left: 0.1rem;
+            top: 4.2rem;
             z-index: 4;
         }
         .a_photo_bg_13 {
@@ -177,8 +177,8 @@
             object-fit: contain;
             height: 4.68rem;
             width: 3.85rem;
-            left: 3.24rem;
-            top: 5.83rem;
+            left: 3.34rem;
+            top: 6.53rem;
             z-index: 2;
         }
         .a_photo_bg_14 {
@@ -385,9 +385,9 @@
             position: absolute;
             object-fit: contain;
             height: 3.44rem;
-            width: 4.75rem;
-            left: 0.59rem;
-            top: 4.13rem;
+            width: 4.65rem;
+            left: 0.29rem;
+            top: 4.33rem;
             z-index: 5;
         }
         .a_photo_5 {
@@ -397,10 +397,10 @@
         .photo_11 {
             position: absolute;
             object-fit: contain;
-            height: 4.44rem;
-            width: 3.56rem;
-            left: 3.38rem;
-            top: 5.93rem;
+            height: 4.04rem;
+            width: 3.36rem;
+            left: 3.58rem;
+            top: 6.83rem;
             z-index: 3;
         }
         .a_photo_11 {

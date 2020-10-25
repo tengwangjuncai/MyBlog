@@ -146,7 +146,7 @@
         },
 
         mounted(){
-            document.title = '维维生日快乐'
+            document.title = '影儿生日快乐'
             this.Start()
         }
 

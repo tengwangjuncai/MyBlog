@@ -5,8 +5,8 @@
 
         <img class='flower_14' v-bind:class="{a_flower_14: isCurrentPage}"
              src='@/assets/flower/flower_14.png'>
-        <img class='flower_8' v-bind:class="{a_flower_8: isCurrentPage}"
-             src='@/assets/flower/flower_8.png'>
+        <!--<img class='flower_8' v-bind:class="{a_flower_8: isCurrentPage}"-->
+             <!--src='@/assets/flower/flower_8.png'>-->
         <img class='flower_5' v-bind:class="{a_flower_5: isCurrentPage}"
              src='@/assets/flower/flower_5.png'>
         <img class='flower_6' v-bind:class="{a_flower_6: isCurrentPage}"
@@ -18,12 +18,12 @@
              src='@/assets/leaf/leaf_27.png'>
 
         <img class='photo_8' v-bind:class="{a_photo_8: isCurrentPage}"
-             src='@/assets/weiwei/wei_10.jpeg'>
+             src='@/assets/Ying/ying_23.jpeg'>
 
         <img class='word_13' v-bind:class="{a_word_13: isCurrentPage}"
-             src='@/assets/word/wpy_16.png'>
+             src='@/assets/word/wpy_19.png'>
         <img class='word_14' v-bind:class="{a_word_14: isCurrentPage}"
-             src='@/assets/word/wpy_17.png'>
+             src='@/assets/word/wpy_18.png'>
 
         <!--<img class="liwu" v-if="isShowPresent && !isShow" src="@/assets/liwu.png" v-bind:class="{a_liwu: isCurrentPage}" @click="showPresent">-->
 
@@ -31,8 +31,8 @@
             <div  v-if="isShow" class="card">
                 <img  class="bg" src='@/assets/present.png'/>
                 <img  v-if="!isShowLabel" class="circle" src='@/assets/kai.png' @click="open"/>
-                <div v-if="isShowLabel" style="font-size: 20px;text-align: center;margin-bottom: 30px;z-index: 100;color: #CB8C45;font-weight: 600">疯狂游乐场</div>
-                <div v-if="isShowLabel" style="font-size: 14px;text-align: center;z-index: 100;color:#CB8C45;font-weight: 500">舍身陪玩你想玩的任何项目</div>
+                <div v-if="isShowLabel" style="font-size: 20px;text-align: center;margin-bottom: 30px;z-index: 100;color: #CB8C45;font-weight: 600">温馨厨房</div>
+                <div v-if="isShowLabel" style="font-size: 14px;text-align: center;z-index: 100;color:#CB8C45;font-weight: 500">学一道你最爱吃的菜，并且亲自下厨做给你吃</div>
                 <div v-if="isShowLabel" class="btn" @click="selectThePresent">{{btnTitle}}</div>
             </div>
         </div>
@@ -129,7 +129,7 @@
             height: 4.46rem;
             width: 5.69rem;
             left: 0.86rem;
-            top: 7.11rem;
+            top: 6.11rem;
             z-index: 2;
             animation: 2000ms ease-in-out 1000ms 1 normal both running fadeIn;
         }
@@ -220,7 +220,7 @@
             height: 4.26rem;
             width: 5.38rem;
             left: 1.08rem;
-            top: 7.2rem;
+            top: 6.2rem;
             z-index: 3;
         }
         .a_photo_8 {
@@ -230,7 +230,7 @@
         .word_13 {
             position: absolute;
             object-fit: contain;
-            height: 0.49rem;
+            height: 0.69rem;
             width: 3.66rem;
             left: 1.92rem;
             top: 1.17rem;
@@ -246,7 +246,7 @@
             height: 5.3rem;
             width: 6.48rem;
             left: 0.6rem;
-            top: 1.88rem;
+            top: 0.88rem;
             z-index: 4;
         }
         .a_word_14 {

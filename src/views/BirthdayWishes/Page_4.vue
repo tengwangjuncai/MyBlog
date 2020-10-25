@@ -37,11 +37,11 @@
              src='@/assets/photo_bg/photo_bg_2.png'>
 
         <img class='photo_7_1' v-bind:class="{a_photo_7_1: isCurrentPage}"
-             src='@/assets/weiwei/wei_6.jpeg'>
+             src='@/assets/Ying/ying_9.jpeg'>
         <img class='photo_7_2' v-bind:class="{a_photo_7_2: isCurrentPage}"
-             src='@/assets/weiwei/wei_6.jpeg'>
+             src='@/assets/Ying/ying_9.jpeg'>
         <img class='photo_7_3' v-bind:class="{a_photo_7_3: isCurrentPage}"
-             src='@/assets/weiwei/wei_6.jpeg'>
+             src='@/assets/Ying/ying_9.jpeg'>
 
         <!--<img class="liwu" v-if="isShowPresent && !isShow" src="@/assets/liwu.png" v-bind:class="{a_liwu: isCurrentPage}" @click="showPresent">-->
 
@@ -287,7 +287,7 @@
         .photo_bg_2_1 {
             position: absolute;
             object-fit: contain;
-            height: 3.09rem;
+            height: 3.00rem;
             width: 6.26rem;
             left: 0.61rem;
             top: 0.53rem;
@@ -300,7 +300,7 @@
         .photo_bg_2_2 {
             position: absolute;
             object-fit: contain;
-            height: 3.13rem;
+            height: 3.0rem;
             width: 6.25rem;
             left: 0.64rem;
             top: 3.74rem;
@@ -313,7 +313,7 @@
         .photo_bg_2_3 {
             position: absolute;
             object-fit: contain;
-            height: 3.13rem;
+            height: 3.0rem;
             width: 6.27rem;
             left: 0.63rem;
             top: 6.96rem;
